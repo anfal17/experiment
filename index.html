@@ -5,26 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,   initial-scale=1.0" />
     <title>CSS</title>
-   <style>
-     ul{
-       background-color: black;
-       color: white;
-     }
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+      }
 
-    </style> 
+      .bg {
+        background-color: #92f8bb;
+        width: auto;
+        height: 720px;
+        background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 4px;
+        padding: 3px;
+      }
+      header {
+        width: 100%;
+        height: 70px;
+        background-color: #282828;
+      }
 
+      h1 {
+        position: absolute;
+        padding: 3px;
+        float: left;
+        margin-left: 2%;
+        margin-top: 10px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: #39ca74;
+      }
+
+      span {
+        color: #ffffff;
+      }
+
+      ul {
+        width: auto;
+        float: right;
+        margin-top: 8px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: -9px;
+      }
+
+      a {
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 2vw;
+      }
+
+      a:hover {
+        color: #e9db18;
+        transition: 0.5s;
+      }
+
+      footer {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        background-color: #1c1919;
+        color: #ffffff;
+      }
+      
+    </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  <div class="main" style="background-color:aqua">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi placeat optio explicabo, dignissimos minima impedit laboriosam culpa? Ducimus dolor autem ipsa fuga reiciendis non quos, explicabo, ipsum minima sed dolorem? At non minus beatae corrupti sequi. Quos, eos mollitia?
-  </div>
+    <header>
+      <h1>MY<span>Website</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href='#'>Spinner</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main" style="background-color: rgb(240, 242, 148)">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
+      placeat optio explicabo, dignissimos minima impedit laboriosam culpa?
+      Ducimus dolor autem ipsa fuga reiciendis non quos, explicabo, ipsum minima
+      sed dolorem? At non minus beatae corrupti sequi. Quos, eos mollitia?
+    </div>
 
+    <div class="bg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
+      nostrum ratione odio laboriosam. Neque fugiat reiciendis corporis, ipsam
+      sequi corrupti vel, consequuntur nostrum atque, exercitationem placeat id
+      esse cupiditate.
+    </div>
+    <footer>
+      <div class="foot">copyright reserved</div>
+    </footer>
   </body>
-</html> 
+</html>
